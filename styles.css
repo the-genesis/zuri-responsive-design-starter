@@ -93,6 +93,7 @@ div.hero-background {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 div.background {
@@ -100,7 +101,6 @@ div.background {
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
     padding: 15px 40px;
     width: 550px;
-    height: 220px;
     position: relative;
 }
 
@@ -115,6 +115,7 @@ div.background h4 {
 div.background p {
     color: #A6A5AA;
     padding-left: 2rem;
+    padding-bottom: 2rem;
     font-size: 0.8rem;
     letter-spacing: 2px;
 }
@@ -344,4 +345,100 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) and (min-width: 240px) {
+  div.nav-bar {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  ul.nav-links {
+      flex-direction: row;
+      margin-top: 10px;
+  }
+
+  ul.nav-links li {
+      text-align: center;
+      margin-top: 5px;
+  }
+
+  div.hero-section {
+      padding: 10rem 24px;
+  }
+
+  div.hero-content-heading p {
+      margin-top: 16px;
+      margin-bottom: 32px;
+  }
+
+  div.hero-background{
+      flex-direction: column-reverse;
+      padding: 5rem 24px;
+  }
+
+  div.background {
+    width: 90%;
+    padding: 24px;
+    
+  }
+
+  div.background h4 {
+    padding: 10px;
+  }
+
+  div.background p {
+    padding: 10px;
+  }
+
+  div.hero-background-pos {
+      position: relative;
+      margin: 0;
+      /* align-self: center; */
+      display: block;
+      left: 0;
+  }
+
+  div.snapshot-box {
+      padding: 2rem 24px;
+  }
+
+  div.snapshot-box-content {
+      flex-direction: column;
+  }
+
+  div.snapshot-team {
+      padding-top: 5rem;
+  }
+
+  div.box1 {
+      width: 300px;
+  }
+
+  div.box3 {
+      width: 300px;
+  }
+
+  div.gallery-section {
+      padding: 5rem 24px;
+  }
+
+  div.footer {
+      padding: 5rem 24px;
+  }
+
+  div.footer-input {
+    flex-direction: column;
+  }
+
+  input[type="text"],input[type="email"],textarea {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  div.footer-textarea {
+    padding: 0;
+  }
 }
