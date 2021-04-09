@@ -14,6 +14,7 @@ div.nav-bar {
     padding: 1rem 6rem;
     width: 100%;
     background: #304353;
+    overflow-x: hidden;
 }
 
 div.logo {
@@ -90,17 +91,19 @@ div.hero-content-btn a {
 
 div.hero-background {
     background: #f0f0f0;
-    padding: 10rem;
+    padding: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 div.background {
     background: #fff;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
     padding: 15px 40px;
+    padding-top: 60px;
+    margin-top: -60px;
     width: 550px;
     position: relative;
 }
@@ -122,9 +125,8 @@ div.background p {
 }
 
 div.hero-background-pos {
-    position: absolute;
-    right: 0px;
-    left: 66%;
+    position: relative;
+    margin: auto;
     background: #fff;
     width: 140px;
     height: 140px;
@@ -451,7 +453,7 @@ ul.mobile-nav-links li {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 600px) and (min-width: 240px) {
+@media only screen and (max-width: 768px) and (min-width: 240px) {
   div.nav-bar {
       flex-direction: row;
       align-items: left;
